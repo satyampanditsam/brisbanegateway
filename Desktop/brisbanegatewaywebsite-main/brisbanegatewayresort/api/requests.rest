@@ -1,0 +1,13 @@
+
+post http://localhost:8000/login
+content-type: application/json
+
+{
+    "email": "lachholland@gmail.com",
+    "password": "black2gold"
+}
+
+# get http://localhost:9000/dashboard
+# Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.MQ.TwayiJPwLp4kx6Ez42VkNvibIbHqA-PO6eSzzDQueGM
+
+

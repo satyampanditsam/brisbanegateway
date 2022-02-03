@@ -1,0 +1,367 @@
+/* @font-face {
+    font-family: 'Gotham Book';
+    src: url('../src/assets/fonts/Gotham-Book.eot');
+    src: url('../src/assets/fonts/Gotham-Book.eot?#iefix') format('embedded-opentype'),
+        url('../src/assets/fonts/Gotham-Book.woff2') format('woff2'),
+        url('../src/assets/fonts/Gotham-Book.woff') format('woff'),
+        url('../src/assets/fonts/Gotham-Book.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+} */
+
+
+
+body {
+	font-family: Gotham Book, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Arial, sans-serif;
+	margin: 0;
+	padding: 0;
+	color: #444444;
+}
+
+a {
+	color: #3594f2;
+}
+
+a:hover {
+	color: #3594f2;
+	text-decoration: none !important;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	/*font-family: "Raleway", sans-serif;*/
+	font-family: Gotham Book, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Arial, sans-serif;
+	line-height: normal !important;
+}
+
+p span {
+	color: #666666 !important;
+	font-size: 16px !important;
+}
+
+p {
+	color: #666666 !important;
+	font-size: 16px !important;
+}
+
+li {
+	color: #666666;
+}
+
+.nav-menu .active>a:before {
+	visibility: hidden !important;
+}
+
+.nav-menu .active>a:hover:before {
+	visibility: visible !important;
+}
+
+/*--------------------------------------------------------------
+
+# Preloader
+
+--------------------------------------------------------------*/
+
+.grecaptcha-badge {
+	visibility: hidden !important
+}
+
+.carousel-inner {
+	position: relative;
+	width: 80%;
+	max-width: 1390px;
+	margin: 0 auto;
+	overflow: hidden;
+}
+
+@media (max-width: 992px) {
+	.carousel-inner {
+		position: relative;
+		width: 100%;
+		margin: 0 auto;
+		overflow: hidden;
+	}
+}
+
+#preloader {
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	z-index: 9999;
+	overflow: hidden;
+	background: #fff;
+}
+
+.slick-slide img {
+	display: block;
+	width: 100%;
+	height: auto;
+}
+
+section#hero.fome_banner {
+	padding-top: 60px;
+}
+
+/*slider slick pre or next button css*/
+
+button.slick-prev.slick-arrow {
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	z-index: 1;
+	display: -ms-flexbox;
+	display: flex;
+	-ms-flex-align: center;
+	align-items: center;
+	-ms-flex-pack: center;
+	justify-content: center;
+	width: 15%;
+	color: transparent;
+	text-align: center;
+	opacity: 1;
+	transition: opacity .15s ease;
+	/* background-image: url(../img/left_arrow.svg) !important; */
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-color: transparent;
+	border: 0;
+	background-size: 60px;
+
+}
+
+button.slick-next.slick-arrow {
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	z-index: 1;
+	display: -ms-flexbox;
+	display: flex;
+	-ms-flex-align: center;
+	align-items: center;
+	-ms-flex-pack: center;
+	justify-content: center;
+	width: 15%;
+	color: transparent;
+	text-align: center;
+	opacity: 1;
+	transition: opacity .15s ease;
+	/* background-image: url(../img/right_arrow.svg) !important; */
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-color: transparent;
+	border: 0;
+	right: 0;
+	background-size: 60px;
+
+}
+
+button:focus {
+	outline: 1px dotted;
+	outline: 0;
+}
+
+#preloader:before {
+	content: "";
+	position: fixed;
+	top: calc(50% - 30px);
+	left: calc(50% - 30px);
+	border: 6px solid #68b047;
+	border-top-color: #fff;
+	border-bottom-color: #fff;
+	border-radius: 50%;
+	width: 60px;
+	height: 60px;
+	-webkit-animation: animate-preloader 1s linear infinite;
+	animation: animate-preloader 1s linear infinite;
+}
+
+@-webkit-keyframes animate-preloader {
+	0% {
+		transform: rotate(0deg);
+	}
+
+	100% {
+		transform: rotate(360deg);
+	}
+}
+
+@keyframes animate-preloader {
+	0% {
+		transform: rotate(0deg);
+	}
+
+	100% {
+		transform: rotate(360deg);
+	}
+}
+
+.header_outer {
+	background-color: #fff;
+	position: sticky;
+	top: 0;
+	z-index: 99;
+	box-shadow: rgba(0,0,0,0.05) 0 2px 5px;
+}
+.container-header {
+	max-width: 1440px;
+	padding-left: 34px;
+	padding-right: 34px;
+}
+
+.common_btn {
+	width: fit-content;
+	font-size: 16px;
+	font-weight: 600 !important;
+	line-height: 24px;
+	text-align: center;
+	color: white;
+	padding: 12px 32px;
+	background: #3594f2;
+	border-radius: 30px;
+	border: 1px solid #3594f2;
+	font-weight: 500;
+	max-width: 311px;
+	z-index: 1;
+	transition: 0.35s;
+	display: inline-block;
+}
+
+.common_btn button {
+	padding: 0;
+	background-color: transparent;
+	border: 0;
+	color: #fff;
+	box-shadow: none;
+}
+
+.common_btn:hover {
+	color: #fff;
+	background: #2b76c0;
+	border: 1px solid #2b76c0;
+}
+
+.info_ftr ul {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	list-style: none;
+	padding: 0;
+	margin: 0;
+}
+
+.info_ftr a {
+	color: #666666;
+}
+
+.info_ftr a svg {
+	font-size: 16px;
+}
+
+.info_ftr ul li {
+	color: #666666;
+	text-align: left;
+	list-style: none;
+	font-size: 18px;
+	margin: 0 20px;
+}
+
+#footer {
+	background: #fff;
+	color: #fff;
+	font-size: 14px;
+	text-align: center;
+	padding: 30px 0;
+	display: flex;
+	border-top: 1px solid #ebebeb;
+}
+
+.footer_end_last {
+	padding-top: 15px;
+	padding-bottom: 15px;
+	background-color: #fbfbfb !important;
+}
+
+.footer_end_last p {
+	color: #666666 !important;
+	font-size: 12px !important;
+	text-align: center;
+	padding: 0;
+	float: unset;
+	display: inline;
+}
+
+.footer_end_last li {
+	margin: 0 10px;
+}
+
+.footer_end_last li a {
+	color: #0c71c3 !important;
+	font-size: 12px;
+}
+
+.footer_end_last ul {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.home_banner_image{
+	width: 100%;
+}
+.home_banner{
+	position: relative;
+	max-height: 93vh;
+	overflow: hidden;
+	min-height: 500px;
+}
+.home_banner_content{
+	position: absolute;
+	top: 0;
+	left: 0;
+	text-align: center;
+	padding: 50px 20px 0;
+	width: 100%;
+	color: #fff;
+}
+.home_banner_content h1{
+	font-size: 48px;
+	margin-bottom: 30px;
+}
+.about_content{
+	padding: 60px 0;
+}
+.about_content h2 {
+    font-weight: 600;
+    font-size: 32px;
+    position: relative;
+    margin-bottom: 12px;
+    width: 100%;
+    text-align: left;
+	color: #0c71b5!important;
+}
+.about_content_inner + .about_content_inner{
+	margin-top: 80px;
+}
+
+.about_text{
+	padding-left: 3.5rem;
+}
+.flex-row-reverse .about_text{
+	padding-right: 4.5rem;
+	padding-left: 0;
+}
+.about_facilities{
+	margin-top: 80px;
+	text-align: center;
+}
+.about_facilities h2{
+	text-align: center;
+}
+.about_facilities_list{
+	margin-top: 40px;
+}
